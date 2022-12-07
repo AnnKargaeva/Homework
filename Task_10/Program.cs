@@ -1,6 +1,5 @@
-﻿int a;
-
+﻿
 Console.Write($"Введите 3х значное число: ");
-int.TryParse(Console.ReadLine()!, out a);
+String a1 = Console.ReadLine()!;
 
-Console.Write($"{a} -> {a / 10 % 10}");
+Console.Write($"{a1[1]}");
