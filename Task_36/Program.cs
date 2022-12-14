@@ -10,4 +10,4 @@ int sum = 0;
 for (int i = 0; i < array.Length; i++)
     if (i % 2 != 0)
         sum = sum + array[i];
-Console.WriteLine($"Сумма нечетных индексов: {sum}");
+Console.WriteLine($"Сумма элементов нечетных индексов: {sum}");
