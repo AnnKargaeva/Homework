@@ -4,9 +4,7 @@
 // int.TryParse(Console.ReadLine(), out n);
 
 int[ , ] array = new int [4, 4];
-int m;
-Console.WriteLine($"Введите число: ");
-int.TryParse(Console.ReadLine(), out m);
+
 
 for (int i = 0; i < array.GetLength(0); i++)
 {
@@ -17,15 +15,17 @@ for (int i = 0; i < array.GetLength(0); i++)
     }
     Console.WriteLine();
 }
-bool find = false;
 
-foreach (var i in array)
-    if (m == i) 
-    {
-        find = true; 
-        break;
-    }
-if (find)
+int iu, ju;
+Console.WriteLine($"Введите позицию элемента в строке: ");
+int.TryParse(Console.ReadLine(), out iu);
+Console.WriteLine($"Введите позицию элемента в столбце: ");
+int.TryParse(Console.ReadLine(), out ju);
+
+
+if (iu < 0 || iu >= array.GetLength(0))
     Console.Write($"Такое число есть");
-else
+else if (ju < 0 || ju >= array.GetLength(0))
     Console.Write($"Такого числа нет");
+else 
+    Console.Write($"{array[iu, ju]}");
