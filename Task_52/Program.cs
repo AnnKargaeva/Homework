@@ -10,4 +10,11 @@ for (int i = 0; i < array.GetLength(0); i++)
     Console.WriteLine();
 }
 
+for (int j = 0; j < array.GetLength(1); j++)
+{
 
+    int sum = 0;
+    for (int i = 0; i < array.GetLength(0); i++)
+        sum += array[i, j];
+    Console.Write($"{Math.Round((double)sum/ array.GetLength(0), 1)}  ");   
+}   
