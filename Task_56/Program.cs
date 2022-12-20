@@ -19,6 +19,7 @@ for (int i = 0; i < array.GetLength(0); i++)
 
 for (int i = 0; i < array.GetLength(0); i++)
 {
+
     int sum = 0;
     for (int j = 0; j < array.GetLength(1); j++)
         sum += array[i, j];
