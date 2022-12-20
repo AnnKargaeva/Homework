@@ -20,7 +20,7 @@ for (int a = 0; a < array.GetLength(0); a++)
         int k = array [a, i];
         int j = i - 1;
 
-        while (j>= 0 && array [a, j] < k)
+        while (j >= 0 && array [a, j] < k)
         {
             array[a, j+1] = array [a, j];
             array [a, j] = k;
